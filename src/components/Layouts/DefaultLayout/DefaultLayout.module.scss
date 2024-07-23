@@ -1,0 +1,33 @@
+@import url(../../../../styleGlobal.scss);
+
+.container {
+    padding:  2rem ;
+    z-index: 1;
+    position: relative;
+    height: fit-content;
+    top: 45px; /* Move o contêiner 80px para a direita */
+    background-color: var(--background-color);
+    width: 100vw;
+    transition: all 0.5s ease;
+
+}
+
+@media (min-width: 640px) {
+    .container {
+        z-index: 1;
+        height: calc(100vh);
+        top: 0;
+        position: relative;
+        width: calc(100vw - 80px);
+        left: 80px; /* Move o contêiner 80px para a direita */
+        background-color: var(--background-color);
+        height: 100vh;
+        transition: all 0.5s ease;
+    
+        &.isSidebarActive {
+            width: calc(100vw - 250px);
+            left: 250px; /* Move o contêiner 250px para a direita */
+            
+        }
+    }
+}

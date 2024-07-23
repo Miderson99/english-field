@@ -1,0 +1,320 @@
+*{
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.sidebar{
+    z-index: 2;
+    background-color: #003399;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 45px;
+    padding: .4rem .8rem;
+    transition: all 0.5s ease;
+    
+
+    .top{
+
+        .logo{
+            display: flex;
+            gap: 5px;
+            opacity: 0;
+            align-items: center;
+            
+            h1{
+                color: #fff;
+
+                font-size: large;
+            }
+        }
+
+        i{
+            color: #fff;
+           position: absolute;
+           top: .4rem;
+           font-size: xx-large;
+           cursor: pointer;
+           line-height: 50px ;
+           
+           left: 50%;
+           transform: translateX(-50%); 
+        }
+    }
+
+    ul{
+        margin-top: 10px;
+        list-style: none;
+        display: none;
+
+        li{
+
+
+
+            position: relative;
+            
+          
+
+            .itemList{
+                
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: center;
+                
+                .iconList{
+                    min-width: 50px;
+                    height: 50px;
+                    border-radius: 12px;
+                        line-height: 50px;
+                    font-size: xx-large;
+                    text-align: center;
+                }
+                
+                span{
+                    opacity: 0;
+                }
+                
+            }
+            
+            .tooltip{
+                position: absolute;
+                color: white;
+                background-color: #003399;
+                border-radius: 5px;
+                box-shadow: 0 0.5rem 0.8rem  rgba(88, 88, 88, 0.438);
+                padding: .4rem 1.2rem;
+                line-height: 1.8rem;
+                opacity: 0;
+                
+                top: 50%;
+                left: 120px;
+                transform: translate(-50%, -50%);
+                z-index: 20;
+            }
+            &:hover{
+                .itemList{
+                    .iconList{
+                        
+                        background-color: white;
+                        color: #003399;
+                    }
+                }
+                .tooltip{
+                    opacity: 1;
+                }
+             }   
+        }
+    }
+        
+
+
+    &.active{
+        height: 250px;
+
+        .top{
+
+            .logo{
+              
+                opacity: 1;
+                
+                h1{
+                }
+            }
+    
+            i{
+                left: 90%;
+                
+            }
+        }
+        ul{
+            display: block;
+            list-style: none;
+    
+            li{
+    
+                .itemList{
+                    
+                 
+                    
+                    .iconList{
+                       
+                    }
+    
+                    span{
+                        opacity: 1;
+                    }
+                    
+                }
+                
+                .tooltip{
+                    display: none;
+                }
+            }
+        }
+    }
+
+}  
+
+
+
+@media (min-width: 640px) {
+ 
+    
+    .sidebar{
+        z-index: 2;
+
+        background-color: #003399;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        padding: .4rem .8rem;
+        transition: all 0.5s ease;
+        width: 80px;
+    
+        .top{
+    
+            .logo{
+                display: flex;
+                gap: 5px;
+                opacity: 0;
+                align-items: center;
+                
+                h1{
+                    color: #fff;
+    
+                    font-size: large;
+                }
+            }
+    
+            i{
+                color: #fff;
+               position: absolute;
+               top: .4rem;
+               font-size: xx-large;
+               cursor: pointer;
+               line-height: 50px ;
+               
+               left: 50%;
+               transform: translateX(-50%); 
+            }
+        }
+    
+        ul{
+            margin-top: 10px;
+            list-style: none;
+    
+            li{
+    
+    
+    
+                position: relative;
+                
+              
+    
+                .itemList{
+                    
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    
+                    .iconList{
+                        min-width: 50px;
+                        height: 50px;
+                        border-radius: 12px;
+                            line-height: 50px;
+                        font-size: xx-large;
+                        text-align: center;
+                    }
+                    
+                    span{
+                        opacity: 0;
+                    }
+                    
+                }
+                
+                .tooltip{
+                    position: absolute;
+                    color: white;
+                    background-color: #003399;
+                    border-radius: 5px;
+                    box-shadow: 0 0.5rem 0.8rem  rgba(88, 88, 88, 0.438);
+                    padding: .4rem 1.2rem;
+                    line-height: 1.8rem;
+                    opacity: 0;
+                    
+                    top: 50%;
+                    left: 120px;
+                    transform: translate(-50%, -50%);
+                    z-index: 20;
+                }
+                &:hover{
+                    .itemList{
+                        .iconList{
+                            
+                            background-color: white;
+                            color: #003399;
+                        }
+                    }
+                    .tooltip{
+                        opacity: 1;
+                    }
+                 }   
+            }
+        }
+            
+    
+    
+        &.active{
+            width: 250px;
+                    height: 100vh;
+
+    
+            .top{
+    
+                .logo{
+                  
+                    opacity: 1;
+                    
+                    h1{
+                    }
+                }
+        
+                i{
+                    left: 90%;
+                    
+                }
+            }
+            ul{
+                list-style: none;
+        
+                li{
+        
+                    .itemList{
+                        
+                     
+                        
+                        .iconList{
+                           
+                        }
+        
+                        span{
+                            opacity: 1;
+                        }
+                        
+                    }
+                    
+                    .tooltip{
+                        display: none;
+                    }
+                }
+            }
+        }
+    
+    }  
+}

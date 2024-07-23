@@ -1,0 +1,134 @@
+@import url(../../../styleGlobal.scss);
+
+
+.image1{
+  width: 600px;
+  background-color: aquamarine;
+  border: 100px solid #003399;
+}
+
+.oi{
+  width: 300px;
+  background-color: rgb(245, 0, 0);
+  border: 50px solid #003399;
+}
+
+.button{
+  background-color: blue;
+}
+
+.dmSerif {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .dm-serif-display-regular-italic {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+.container {
+  background-color: var(--background-color);
+  color: var(--font-color);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.heading {
+  font-size: 2rem;
+  
+  margin-bottom: 20px;
+  text-align: left;
+  background-color: var( --color-primary);
+  padding: 0.25rem;
+  width: fit-content;
+  position: absolute;
+  z-index: 2;
+  
+}
+.divider{
+    z-index: 1;
+
+    position: absolute;
+    right: 0;
+    left: 0;
+    align-self: center;
+
+
+    border: none;
+    border-top: 1rem solid var(--color-primary);
+
+}
+
+.subheading {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.icon {
+  font-size: 1.5rem;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.images img {
+  width: 250px;
+  border: 2px solid var(--font-color);
+  border-radius: 5px;
+
+
+}
+
+.images img.correct {
+  border: 15px solid #009926;
+}
+.images img.rightAnswer {
+  border: 15px solid #006efd;
+}
+.images img.wrong {
+  border: 15px solid #ff0808;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.stats p {
+  margin: 0;
+}
+
+.total {
+  color: var(--font-color);
+}
+
+
+
+.incorrect {
+  color: var(--color-error);
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
