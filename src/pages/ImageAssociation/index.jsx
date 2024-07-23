@@ -82,9 +82,9 @@ const ImageAssociation = () => {
           );
           console.log(rightPositionImage);
           const image = {
-            [`image${rightPositionImage}`]: `../public/ImageAssociation/images/${element.image}`,
-            [`image${arrayPositionImages[0]}`]: `../public/ImageAssociation/images/${arrayNumberRandomImages[0]}.jpg`,
-            [`image${arrayPositionImages[1]}`]: `../public/ImageAssociation/images/${arrayNumberRandomImages[1]}.jpg`,
+            [`image${rightPositionImage}`]: `/public/ImageAssociation/images/${element.image}`,
+            [`image${arrayPositionImages[0]}`]: `./public/ImageAssociation/images/${arrayNumberRandomImages[0]}.jpg`,
+            [`image${arrayPositionImages[1]}`]: `public/ImageAssociation/images/${arrayNumberRandomImages[1]}.jpg`,
           };
           if (currentId === 0) {
             setListTest((prev) => [
