@@ -13,8 +13,23 @@
   border: 50px solid #003399;
 }
 
-.button{
-  background-color: blue;
+.button {
+  background-color: #4CAF50; /* Cor de fundo verde */
+  border: none; /* Sem borda */
+  color: white; /* Cor do texto branca */
+  padding: 15px 32px; /* Espaçamento interno */
+  text-align: center; /* Alinhamento do texto */
+  text-decoration: none; /* Sem sublinhado */
+  display: inline-block; /* Exibição em linha */
+  font-size: 16px; /* Tamanho da fonte */
+  margin: 4px 2px; /* Margem */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  border-radius: 12px; /* Bordas arredondadas */
+  transition: background-color 0.3s ease; /* Transição suave para a mudança de cor */
+}
+
+.button:hover {
+  background-color: #45a049; /* Cor de fundo ao passar o mouse */
 }
 
 .dmSerif {
@@ -132,3 +147,4 @@
   justify-content: center;
   gap: 10px;
 }
+

@@ -451,7 +451,7 @@ const [erros, setErros]= useState(0)
             
             : (
               <div>
-              <button onClick={() => setStarter(true)}>Start</button>
+              <button className={styles.button} onClick={() => setStarter(true)}>Start</button>
               <p
                 className={styles.total}
               >{`Total: ${shuffledArraydata.length}`}</p>
